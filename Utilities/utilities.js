@@ -1,5 +1,4 @@
-const date = new Date();
-console.log(date);
+
 function createHexColor() {
     let hex = "#";
     const hexChars = "0123456789ABCDEF";
