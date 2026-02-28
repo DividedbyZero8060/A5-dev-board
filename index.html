@@ -7,7 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#F4F7FF] max-w-full max-h-full">
-    <h1 class="text-blue-700">Hello</h1>
+<body class="bg-[#F4F7FF]">
+    <header class="bg-white">
+        <nav class="mt-6 mx-32 flex justify-between ">
+            <div class="flex gap-2">
+                <img class="w-12" src="./Assets/logo.png" alt="">
+                <h1 class="relative top-3">DEV<span class="font-extrabold">Board</span></h1>
+            </div>
+            <div class="flex justify-between items-center gap-9">
+                <div class="flex gap-2">
+                    <img src="./Assets/checkbox.png" alt="">
+                    <p id="nav-count">23</p>
+                </div>
+                <img id="theme-btn" class="w-8" src="./Assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
