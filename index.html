@@ -60,7 +60,7 @@
                     <p><span id="day-disp">Wed</span>,<br><span id="date-disp">Jul 28 2025</span></p>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-4">
+            <div id="cards-container" class="grid grid-cols-3 gap-4">
                 <!-- card 1 -->
                 <div class="card card-border bg-base-100 w-full white-bg p-2">
                 <div id="card-1" class="card-body">
@@ -155,7 +155,7 @@ and ensure onClick works properly</p>
             </div>
         </section>
         <!-- side section -->
-         <section class="bg-white mt-4 p-6 flex flex-col gap-6 w-[200px] shrink-0 rounded-lg">
+         <section id="sidebar" class="bg-white mt-4 p-6 flex flex-col gap-6 w-[200px] shrink-0 rounded-lg">
             <div class="flex gap-4 ">
                 <img src="./Assets/activity.png" alt="">
                 <p>Activity Log</p>
@@ -168,6 +168,7 @@ and ensure onClick works properly</p>
     <script src="./Utilities/utilities.js"></script>
     <script src="./Scripts/bodyColorToggle.js"></script>
     <script src="./Scripts/dateAdjust.js"></script>
+    <script src="./Scripts/taskCounter.js"></script>
     
 </body>
 </html>

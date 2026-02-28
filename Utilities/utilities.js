@@ -8,3 +8,13 @@ function createHexColor() {
     }
     return hex;
 }
+
+function getIntegerFromTextByID(id) {
+    const text = document.getElementById(id).innerText;
+    const num = parseInt(text);
+    return num;
+}
+
+function updateTextByID(id,newText) {
+    document.getElementById(id).innerText = newText;
+}
