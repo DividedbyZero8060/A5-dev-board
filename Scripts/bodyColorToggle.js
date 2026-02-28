@@ -2,7 +2,7 @@ document.getElementById("theme-btn").addEventListener("click",function(event){
     event.preventDefault();
     const body = document.getElementById("body");
     if(body.classList.length !== 0) {
-        body.classList.remove("bg-[#F4F7FF]");
+        body.classList.remove("white-bg");
     }
     const newColor= createHexColor();
     console.log(newColor);
