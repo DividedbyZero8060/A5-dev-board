@@ -40,113 +40,130 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="flex gap-6 px-16">
         <!-- tasks section -->
-        <section class="bg-white mt-4 p-6">
+        <section class="bg-white mt-4 p-6 flex-1 rounded-lg">
             <div class="flex p-6 gap-6 items-center justify-between">
-                <div class="flex gap-4 rounded-lg white-bg p-4">
-                    <img  class="w-16" src="./Assets/checkbox.png" alt="">
+                <div class="flex items-center gap-4 rounded-lg white-bg p-4">
+                    <img  class="w-8" src="./Assets/checkbox.png" alt="">
                     <div>
                         <p>Tasks Assigned</p>
                         <h1>0<span id="tasks-count">6</span></h1>
                     </div>
                 </div>
-                <div id="blog-btn" class="flex hero-bg-gradient gap-4 rounded-lg p-4">
-                    <img class="w-16" src="./Assets/board.png" alt="">
-                    <p>Discover Something<br>New Today!</p>
+                <div id="blog-btn" class="flex items-center hero-bg-gradient gap-4 rounded-lg p-4">
+                    <img class="w-8" src="./Assets/board.png" alt="">
+                    <p>Discover Something New Today!</p>
                 </div>
-                <div class="flex rounded-lg white-bg p-4 gap-4">
-                    <img class="w-16" src="./Assets/calender.png" alt="">
+                <div class="flex items-center rounded-lg white-bg p-4 gap-4">
+                    <img class="w-8" src="./Assets/calender.png" alt="">
                     <p><span id="day-disp">Wed</span>,<br><span id="date-disp">Jul 28 2025</span></p>
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-4">
-                <div class="card card-border bg-base-100 w-96 white-bg p-2">
-                <div class="card-body">
+                <!-- card 1 -->
+                <div class="card card-border bg-base-100 w-full white-bg p-2">
+                <div id="card-1" class="card-body">
                     <button class="btn w-fit bg-white px-2 py-4">Shop Ease</button>
                     <h1 class="text-2xl">Fix Mobile Button Issue</h1>
                     <p class="bg-white p-4 rounded-lg text-gray-800">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     and ensure onClick works properly</p>
+                    <hr class="border-dashed border-gray-300 mb-4">
                     <div class="card-actions justify-end mt-4 border-dashed">
                     <p>Deadline<br><span id="date-disp">21 March 2025</span></p>
-                    <button class="btn-active btn btn-primary bg-blue-700 text-white py-4 px-8 ">Completed</button>
+                    <button class="btn-active btn btn-primary bg-blue-700 text-white p-2 ">Completed</button>
                     </div>
                 </div>
                 </div>
 
                 <!-- card 2 -->
-                 <div class="card card-border bg-base-100 w-96 white-bg p-2">
-                <div class="card-body">
+                 <div class="card card-border bg-base-100 w-full white-bg p-2">
+                <div id="card-2" class="card-body">
                     <button class="btn w-fit bg-white px-2 py-4">CloudSync</button>
                     <h1 class="text-2xl">Add Dark Mode</h1>
                     <p class="bg-white p-4 rounded-lg text-gray-800">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <hr class="border-dashed border-gray-300 mb-4">
                     <div class="card-actions justify-end mt-4 border-dashed">
                     <p>Deadline<br><span id="date-disp">21 March 2025</span></p>
-                    <button class="btn-active btn btn-primary bg-blue-700 text-white py-4 px-8 ">Completed</button>
+                    <button class="btn-active btn btn-primary bg-blue-700 text-white p-2 ">Completed</button>
                     </div>
                 </div>
                 </div>
 
                 <!-- card 3 -->
 
-                <div class="card card-border bg-base-100 w-96 white-bg p-2">
-                <div class="card-body">
+                <div class="card card-border bg-base-100 w-full white-bg p-2">
+                <div id="card-3" class="card-body">
                     <button class="btn w-fit bg-white px-2 py-4">SwiftPay</button>
                     <h1 class="text-2xl">Optimize  Home page</h1>
                     <p class="bg-white p-4 rounded-lg text-gray-800">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
+<hr class="border-dashed border-gray-300 mb-4">
                     <div class="card-actions justify-end mt-4 border-dashed">
                     <p>Deadline<br><span id="date-disp">21 March 2025</span></p>
-                    <button class="btn-active btn btn-primary bg-blue-700 text-white py-4 px-8 ">Completed</button>
+                    <button class="btn-active btn btn-primary bg-blue-700 text-white p-2 ">Completed</button>
                     </div>
                 </div>
                 </div>
 
                 <!-- card 4 -->
 
-                <div class="card card-border bg-base-100 w-96 white-bg p-2">
-                <div class="card-body">
+                <div class="card card-border bg-base-100 w-full white-bg p-2">
+                <div id="card-4" class="card-body">
                     <button class="btn w-fit bg-white px-2 py-4">Meta</button>
                     <h1 class="text-2xl">Add new emoji 🤲</h1>
                     <p class="bg-white p-4 rounded-lg text-gray-800">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
+<hr class="border-dashed border-gray-300 mb-4">
                     <div class="card-actions justify-end mt-4 border-dashed">
                     <p>Deadline<br><span id="date-disp">21 March 2025</span></p>
-                    <button class="btn-active btn btn-primary bg-blue-700 text-white py-4 px-8">Completed</button>
+                    <button class="btn-active btn btn-primary bg-blue-700 text-white p-2 ">Completed</button>
                     </div>
                 </div>
                 </div>
 
                 <!-- card 5 -->
-                 <div class="card card-border bg-base-100 w-96 white-bg p-2">
-                <div class="card-body">
+                 <div class="card card-border bg-base-100 w-full white-bg p-2">
+                <div id="card-5" class="card-body">
                     <button class="btn w-fit bg-white px-2 py-4">Google LLC</button>
                     <h1 class="text-2xl">Integrate OpenAI API </h1>
                     <p class="bg-white p-4 rounded-lg text-gray-800">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
+                        <hr class="border-dashed border-gray-300 mb-4">
                     <div class="card-actions justify-end mt-4 border-dashed">
                     <p>Deadline<br><span id="date-disp">21 March 2025</span></p>
-                    <button class="btn-active btn btn-primary bg-blue-700 text-white py-4 px-8">Completed</button>
+                    <button class="btn-active btn btn-primary bg-blue-700 text-white p-2 ">Completed</button>
                     </div>
                 </div>
                 </div>
 
                 <!-- card 6 -->
 
-                <div class="card card-border bg-base-100 w-96 white-bg p-2">
-                <div class="card-body">
+                <div class="card card-border bg-base-100 w-full white-bg p-2">
+                <div id="card-6" class="card-body">
                     <button class="btn w-fit bg-white px-2 py-4">Glassdoar</button>
                     <h1 class="text-2xl">Improve Job searching </h1>
                     <p class="bg-white p-4 rounded-lg text-gray-800">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
+<hr class="border-dashed border-gray-300 mb-4">
                     <div class="card-actions justify-end mt-4 border-dashed">
                     <p>Deadline<br><span id="date-disp">21 March 2025</span></p>
-                    <button class="btn-active btn btn-primary bg-blue-700 text-white py-4 px-8">Completed</button>
+                    <button class="btn-active btn btn-primary bg-blue-700 text-white p-2 ">Completed</button>
                     </div>
                 </div>
                 </div>
             </div>
         </section>
+        <!-- side section -->
+         <section class="bg-white mt-4 p-6 flex flex-col gap-6 w-[200px] shrink-0 rounded-lg">
+            <div class="flex gap-4 ">
+                <img src="./Assets/activity.png" alt="">
+                <p>Activity Log</p>
+            </div>
+            <button id="clear-histroy-btn" class="btn btn-active btn-primary bg-blue-700 text-white">Clear History</button>
+            <hr class="border-dashed border-gray-300 w-full">
+         </section>
+        
     </main>
     <script src="./Utilities/utilities.js"></script>
     <script src="./Scripts/bodyColorToggle.js"></script>
