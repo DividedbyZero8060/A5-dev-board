@@ -1,13 +1,8 @@
-// let active_buttons = document.getElementsByClassName("btn-active");
-// let p = active_buttons[1].parentNode.parentNode;
-// let c = p.getElementsByTagName("h1")[0].innerText;
-// console.log(c);
 
-let t_count = getIntegerFromTextByID("tasks-count");
-let n_count = getIntegerFromTextByID("nav-count");
 
 document.getElementById("cards-container").addEventListener("click", event => {
-    
+    let t_count = getIntegerFromTextByID("tasks-count");
+    let n_count = getIntegerFromTextByID("nav-count");
     if(event.target.matches(".btn-active")) {
         let p = event.target.parentNode.parentNode;
         let c = p.getElementsByTagName("h1")[0].innerText;
@@ -24,6 +19,10 @@ document.getElementById("cards-container").addEventListener("click", event => {
         document.getElementById("sidebar").innerHTML += `
         <p>You have completed The task ${c} at ${new Date().toLocaleTimeString()}</p>
         `;
+        let n = document.getElementById("sidebar");
+        let t = n.getElementsByTagName("p").length;
+        n.getElementsByTagName("p")[t-1].style.backgroundColor = "#F4F7FF";
+        n.getElementsByTagName("p")[t-1].classList.add("p-2","rounded-lg");
 
         alert("Board Updated Successfully");
 
