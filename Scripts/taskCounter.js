@@ -16,14 +16,7 @@ document.getElementById("cards-container").addEventListener("click", event => {
         event.target.classList.add("bg-gray-300");
         event.target.disabled = true;
 
-        document.getElementById("sidebar").innerHTML += `
-        <p>You have completed The task ${c} at ${new Date().toLocaleTimeString()}</p>
-        `;
-        let n = document.getElementById("sidebar");
-        let t = n.getElementsByTagName("p").length;
-        n.getElementsByTagName("p")[t-1].style.backgroundColor = "#F4F7FF";
-        n.getElementsByTagName("p")[t-1].classList.add("p-2","rounded-lg");
-
+        createElementByID("sidebar","p",c);
         alert("Board Updated Successfully");
 
     }
